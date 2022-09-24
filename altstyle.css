@@ -1,0 +1,91 @@
+html {background-color: white}
+a:link {
+  color: rgb(5, 190, 220);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(5, 190, 220);
+  }
+h1{
+    color: white;/* comments are slash star */
+}
+h2{
+    color:black;
+}
+h3{
+    color: black;
+    margin-left: 20px;
+}
+h4{
+    color: black;/* comments are slash star */
+    margin-left: 40px;
+}
+h5{
+    color: black;
+    margin-left: 40px;
+}
+
+.maintext{
+  margin-right: 2em;
+  margin-left: 2em;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.maintext p{
+margin-left: 40px;
+letter-spacing: 1px;
+}
+.maintext li{
+margin-left: 50px;
+}
+
+* {/*creates the nav bar*/
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  nav {/*nav bar oconfiguration*/
+    font-family: Arial, sans-serif;
+    background: rgb(35, 110, 220);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {/*affects text in nav menu */
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {/*hover on nav bar*/
+    background: white;
+    color: black
+  }
+  nav .openMenu {/*changes the open menu icon*/
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {/*controls the icons in the menu*/
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  nav .name {
+    margin: 6px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+  }

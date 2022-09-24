@@ -1,0 +1,121 @@
+html {background-color: rgb(30, 30, 30)}
+a:link {
+    color: rgb(130, 200, 230);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(130, 200, 230);
+  }
+h1{
+    color: white;/* comments are slash star */
+}
+h2{
+    color:white;
+}
+h3{
+    color: white;
+}
+h4{
+    color: white;/* comments are slash star */
+    margin-left: 20px;
+}
+h5{
+    color: white;
+    margin-left: 20px;
+}
+.maintext{
+    margin-right: 2em;
+    margin-left: 2em;
+    color: white;
+
+}
+.maintext p{
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+.maintext li{
+  margin-left: 50px;
+}
+/*nav bar and burger menu stuff*/
+* {/*creates the nav bar*/
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  nav {/*nav bar oconfiguration*/
+    font-family: Arial, sans-serif;
+    background: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);/* color of icons*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu li a {/*affects link text in nav menu */
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;/* affects link color*/
+    font-size: 30px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px;
+    color: white
+  }
+  .fa-linkedin:hover {/* the following control icons  change as needed*/
+    color: rgb(0, 114, 177);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .name {
+    margin: 6px;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    color: blue;
+  }
+  /* where media used to be*/
+  nav .mainMenu {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {/*open menu icon on navbar*/
+    font-size: 2rem;
+    margin: 20px;
+    display: block;
+    cursor: pointer;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(130, 200, 230);
+  }
