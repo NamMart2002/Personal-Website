@@ -1,4 +1,4 @@
-html {background-color: rgb(30, 30, 30)}
+html {background-color: rgb(255,255,240)}
 a:link {
     color: rgb(130, 200, 230);
   }
@@ -7,12 +7,9 @@ a:link {
   a:visited {
     color: rgb(130, 200, 230);
   }
-h1{
-    color: white;/* comments are slash star */
-}
-h2{
-    color:white;
-}
+/* h1{
+    color: white; comments are slash star 
+} */
 h3{
     color: white;
 }
@@ -27,15 +24,121 @@ h5{
 .maintext{
     margin-right: 2em;
     margin-left: 2em;
-    color: white;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+}
+.maintext h2{
+  font-family: "Century Gothic";
+  color:black;
+  font-size: 5vw;
+}
+.about_me{
+  display: flex;
+  margin-top: .2%;
+  background-color: black;
+  color:white;
+  box-shadow: 0px 15px 30px black;
+  
+}
+.about_me .ab_content{
+  flex:2;
+}
+.about_me .ab_content h2{
+ font-family: "Century Gothic";
+ color:ivory;
+ font-weight: normal;
+ font-size: 3.1vw;
+ 
+}
+.about_me .ab_content p{
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: "Century Gothic";
+  color:ivory;
+  font-size: 2vw;
+}
+.about_me .ab_image{
+  flex:1;
+}
+.about_me .ab_content .icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  width: 15%;
+  /* aspect-ratio: 100%; */
+}
+.about_me .ab_content .fa-linkedin{
+  color:white;
+  width: 5%;
+}
+.about_me .ab_content .fa-instagram{
+  color:white;
+  width: 5%;
+}
+.about_me .ab_content .fa-linkedin:hover {/* the following control icons  change as needed*/
+  color: rgb(0, 114, 177);
+}
 
+.about_me .ab_content .fa-instagram:hover {
+  color: rgb(255, 0, 191);
 }
 .maintext p{
-  margin-left: 40px;
-  letter-spacing: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.75vw;
 }
 .maintext li{
   margin-left: 50px;
+}
+.projNames{
+  color: ivory;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  font-size: 4vw;
+  margin-left: 2vw;
+  text-shadow: .2px .2px 1px white;
+}
+.subheadings{
+  margin-left: 2%;
+}
+.projectStuff p{
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  line-height: 150%;
+}
+.projectStuff hr{
+  align-self: center;
+}
+.projPics{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+
+}
+figure figcaption{
+  color: white;
+  text-align: center;
+}
+.projPics2{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* height: 25%; */
+
+}
+.projPics3{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66%;
+  /* height: 25%; */
+
 }
 /*nav bar and burger menu stuff*/
 * {/*creates the nav bar*/
@@ -45,7 +148,7 @@ h5{
   }
   nav {/*nav bar oconfiguration*/
     font-family: Arial, sans-serif;
-    background: rgb(20, 20, 20);
+    background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);/* color of icons*/
     display: flex;
     align-items: center;
@@ -81,11 +184,23 @@ h5{
     color: rgb(255, 123, 0);
   }
   nav .name {
-    margin: 6px;
-    font-size: x-large;
+    margin-left: 4vw;
+    font-size: 2.5vw;
     font-family: 'Courier New', Courier, monospace;
-    cursor: pointer;
-    color: blue;
+    color: ivory;
+  }
+  nav .name h1::after {
+    content: "";
+    margin-left: .15vw;
+    width: 1.5vw;
+    height:2.25vw;
+    background: white;
+    display: inline-block;
+    animation: cursor-blink 1.25s steps(1) infinite;
+  }
+  @keyframes cursor-blink {
+    0% {background: transparent}
+    50% {background: #fff}
   }
   /* where media used to be*/
   nav .mainMenu {
@@ -119,3 +234,106 @@ h5{
     background: none;
     color: rgb(130, 200, 230);
   }
+  .contentpane{
+    margin-top: .2%;
+    bottom: 0px;
+    background-color: rgb(16,23,28);
+  }
+  .content_box{
+    background-color: ivory;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 10px 10px black;
+  }
+  .content_box h2{
+    text-align: center;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 3.5vw;
+    text-shadow: .2px .2px 1px black;
+  }
+  .content_box h4{
+    color: black;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 2.5vw;
+    margin-left: 2vw;
+    text-shadow: .2px .2px 1px black;
+  }
+  .content_box p{
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
+  }
+
+  .dark_content_box{
+    background-color: rgb(0, 0, 0);
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 10px 10px black;
+  }
+  .dark_content_box h5{
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 2vw;
+    text-shadow: .2px .2px 1px white;
+    margin-left: 5vw;
+  }
+  .dark_content_box h4{
+    color: ivory;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 2.5vw;
+    margin-left: 2vw;
+    text-shadow: .2px .2px 1px white;
+  }
+  .dark_content_box ul{
+    color: ivory;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+  .dark_content_box .img1{
+    height: 15vw;
+    width: 15vw;
+    display: block;
+    margin-right: 3vw;
+    margin-top: 3vw;
+    float: right;
+
+  }
+  .dark_content_box .img2{
+    height: 20vw;
+
+    display: block;
+    margin-right: 3.5vw;
+    margin-top: 4.25vw;
+    float: right;
+
+  }
+  .dark_content_box .img3{
+    height: 13vw;
+    width: 13vw;
+    margin-top: 3vw;
+    display: block;
+    margin-right: 3.5vw;
+    float: right;
+
+  }
+  .dark_content_box p{
+    color: ivory;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+  }
+  
+  
+
+
